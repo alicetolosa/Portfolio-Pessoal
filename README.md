@@ -1,4 +1,4 @@
-# Projeto Portfólio Pessoal
+# Portfólio Pessoal
 
 ---
 
@@ -10,7 +10,7 @@
 
 <br />
 
-O **Projeto Portfólio Pessoal** é um **site profissional moderno**, desenvolvido com **HTML, CSS e JavaScript**, com o objetivo de apresentar informações sobre a pessoa desenvolvedora, seus projetos e formas de contato de maneira clara, interativa e responsiva.
+O **Portfólio Pessoal** é um **site profissional moderno**, desenvolvido com **HTML, CSS e JavaScript**, com o objetivo de me apresentar, destacar meus projetos e disponibilizar formas de contato de maneira clara, interativa e responsiva.
 
 O projeto consome dados dinâmicos da **API do GitHub**, permitindo que informações como perfil e repositórios sejam carregadas automaticamente, mantendo o conteúdo sempre atualizado.
 
