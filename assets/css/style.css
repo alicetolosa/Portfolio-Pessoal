@@ -115,7 +115,7 @@ main {
     border-color: var(--purple-800);
     background-color: var(--purple-800);
     box-shadow: var(--shadow-md);
-    transform: translate(-0.25rem);
+    transform: translateY(-0.25rem);
 }
 
 /* Botão outline (secundario)*/
@@ -143,7 +143,7 @@ main {
 }
 
 header {
-    position: static;
+    position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
@@ -159,7 +159,7 @@ header a {
     transition: color 0.3s ease;
 }
 
-head a:hover {
+header a:hover {
     color: var(--purple-100);
 }
 
@@ -209,7 +209,7 @@ head a:hover {
 }
 
 .hero-content h1 {
-    font-size: var(--text-3xl);
+    font-size: var(--text-2xl);
     font-weight: 700;
 }
 
@@ -228,10 +228,16 @@ head a:hover {
 
 .hero-image img {
     width: 400px;
-    max-width: 100;
+    max-width: 100%;
     border-radius: var(--radius-xl);
 }
 
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap; /* quebra linha se não couber */
+    gap: 1rem; /* espaço entre os ícones */
+    align-items: center;
+}
 /* animação da foto*/
 @keyframes float {
     0%,
@@ -392,7 +398,7 @@ head a:hover {
 .project-content p {
     flex: 1;
     margin-bottom: var(--spacing-sm);
-    font-size: 0.95rem;
+    font-size: var(--text-base);
     color: var(--gray-400);
 }
 
@@ -486,8 +492,8 @@ head a:hover {
     width: 5rem;
     height: 5rem;
     padding: 0.75rem;
-    border-radius: var(--radius-md)
-    var(--transition-default);
+    border-radius: var(--radius-md);
+    transition: var(--transition-default);
 }
 
 .social-icon img {
@@ -526,7 +532,7 @@ form input,
 form textarea {
     width: 100%;
     padding: 0.5rem var(--spacing-sm);
-    border: 0.25rem solid var(--spacing-sm);
+    border: 0.25rem solid var(--gray-200);
     border-radius: var(--radius-md);
     font-family: inherit;
     font-size: var(--text-base);
@@ -539,7 +545,7 @@ form textarea:focus {
     outline: none;
 }
 
-form texterea {
+form textarea {
     min-height: 5rem;
     resize: none;
 }
@@ -764,5 +770,185 @@ footer {
     .success-icon img {
         width: 5rem;
         height: 5rem;
+    }
+}
+
+@media  screen and (max-width: 480px) {
+    
+    .section-container {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .section-container h2 {
+        font-size: var(--text-xl);
+    }
+
+    .section-container span {
+        font-size: var(--text-lg);
+    }
+
+    .success-content h1 {
+        font-size: var(--text-xl);
+    }
+
+    .success-content h2 {
+        font-size: var(--text-base);
+    }
+
+    #titulo {
+        font-size: var(--text-xl);
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .hero-container {
+        gap: var(--spacing-sm);
+    }
+
+    .hero-content {
+        gap: var(--spacing-xs);
+        width: 100%;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+    }
+
+    .buttons-container .botao,
+    .buttons-container .botao-outline {
+        width: 100%;
+    }
+
+    .hero-container  .botao,
+    .hero-container .botao-outline {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+        white-space: nowrap;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 20rem;
+    }
+
+    .about-image {
+        max-width: 14rem;
+    }
+
+    .about-buttons-data .botao,
+    .about-buttons-data .botao-outline {
+        width: 100%;
+        padding: 0.75rem var(--spacing-lg);
+        font-size: var(--text-base);
+        text-align: center;
+    }
+
+    .data-number {
+        font-size: var(--text-lg);
+    }
+
+    .data-label {
+        font-size: var(--text-sm);
+    }
+
+    .projects-container {
+        margin: var(--spacing-lg);
+    }
+
+    .projects-swiper {
+        position: relative;
+        margin: 0;
+        padding: var(--spacing-sm) 0 2rem 0;
+        overflow: visible;
+
+    }
+
+    .project-card {
+        width: 100%;
+        height: 20rem;
+        max-width: 20rem;
+    }
+
+    .project-image {
+        height: 10rem;
+    }
+
+    .project-content {
+        padding: var(--spacing-md);
+    }
+
+    .project-content h3{
+        font-size: 1.25rem;
+    }
+
+    .project-content p {
+        font-size: 0.95rem;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+
+    .contact-info p {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .social-container {
+        flex-wrap: wrap;
+        gap:  var(--spacing-lg);
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .social-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    form {
+        gap: var(--spacing-sm);
+    }
+
+    form label {
+        font-size: 0.95rem;
+    }
+
+    form input,
+    form textarea {
+        padding: 0.75rem;
+        font-size: var(--text-base);
+    }
+
+    form button {
+        padding: 0.75rem var(--spacing-md);
+        font-size: var(--text-base);
+    }
+
+    footer {
+        padding: var(--spacing-md) var(--spacing-sm);
+        font-size: var(--text-sm);
+    }
+
+    .success-content {
+        gap: var(--spacing-md);
+        max-width: 100%;
+        padding: 0 var(--spacing-sm);
+    }
+
+    .success-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .success-content .botao {
+        width: 100%;
+        max-width: 20rem;
+        padding: 0.75rem var(--spacing-lg);
     }
 }

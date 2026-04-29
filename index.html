@@ -57,26 +57,27 @@
     <main>
 
         <!--Seção Boas vindas-->
-        <section id="#hero" class="section-container hero-container">
+        <section id="hero" class="section-container hero-container">
 
             <!--Boas Vindas-->
-            <article class="#hero-content">
+            <article class="hero-content">
 
                 <span>Olá, eu sou a Alice Tolosa</span>
                 <h1>Desenvolvedora Full Stack Jr</h1>
                 <p>Atuo no desenvolvimento de aplicações web, criando soluções tanto no front-end quanto no back-end.</p>
-                <p>🚀 Linguagens e Tecnologias </p>
                 
+                <div class="tech-icons">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="Js" title="JavaScript" height="30" width="30" /> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="Ts" title="TypeScript" height="30" width="30" /> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" title="React" height="30" width="30" /> 
+                    <img src="https://cdn.simpleicons.org/nestjs/E0234E" alt="NestJS" title="NestJS" height="30" width="30" /> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" title="Tailwind" height="30" width="30" />
+                    <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" title="MySQL" height="30" width="30" />
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML" title="HTML" height="30" width="30" />
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS" title="CSS" height="30" width="30" />
 
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="Js" title="JavaScript" height="30" width="30" /> 
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="Ts" title="TypeScript" height="30" width="30" /> 
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" title="React" height="30" width="30" /> 
-                <img src="https://cdn.simpleicons.org/nestjs/E0234E" alt="NestJS" title="NestJS" height="30" width="30" /> 
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" title="Tailwind" height="30" width="30" />
-                <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" title="MySQL" height="30" width="30" />
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML" title="HTML" height="30" width="30" />
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS" title="CSS" height="30" width="30" />
-
+                </div>
+                
                 
                 <div class="buttons-container">
                     <a href="#contact" class="botao">Entre em Contato</a>
@@ -123,7 +124,7 @@
                     <div class="data-container">
                         <div class="data-item">
                             <span class="data-number">100</span>
-                            <span class="data-lavel">Seguidores</span>
+                            <span class="data-label">Seguidores</span>
                         </div>
 
                         <div class="data-item">
@@ -182,19 +183,19 @@
         </section>
 
         <!--Seção de Contatos e redes sociais-->
-        <section id="#contact" class="selection-container contact-container">
+        <section id="#contact" class="section-container contact-container">
 
             <!--Redes Sociais-->
             <article class="contact-info">
                 <h2>Entre em Contato</h2>
-                <p>Sinta-se á vontade para entrar em contato comigo</p>
+                <p>Sinta-se à vontade para entrar em contato comigo</p>
 
                 <div class="social-container">
                     <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn">
                         <img src="./assets/icons/social/linkedin.svg" alt="Link para o Linkedin">
                     </a>
 
-                    <a href="#" target="_blank" class="social-icon" aria-label="Github">
+                    <a href="#" target="_blank" class="social-icon" aria-label="GitHub">
                         <img src="./assets/icons/social/github.svg" alt="Link para o Github">
                     </a>
 
@@ -212,15 +213,15 @@
                 <span id="erro-nome"></span>
 
                 <label for="email">E-mail</label>
-                <input id="email" nome="email" type="text" placeholder="Digite o seu email">
+                <input id="email" name="email" type="text" placeholder="Digite o seu email">
                 <span id="erro-email"></span>
 
                 <label for="assunto">Assunto</label>
-                <input id="assunto" nome="assunto" type="text" placeholder="Digite o assunto da mensagem">
+                <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto da mensagem">
                 <span id="erro-assunto"></span>
 
                 <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" nome="mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
                 <span id="erro-mensagem"></span>
 
                 <button class="botao" type="submit">Enviar Mensagem</button>
