@@ -23,7 +23,9 @@
     <!-- SWIPER CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> 
 
+
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+    
     <!-- Link para a Folha de Estilo da Página - CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Portfólio</title>
@@ -94,46 +96,9 @@
 
         </section>
 
-      <!--Sobre o autor-->
-        <section id="#about" class="section-container about-container">
-            
-            <figure class="about-image">
-                <img src="./assets/img/foto_alice.jpeg" alt="Foto do Perfil">
-            </figure>
-
-            <article class="about-content">
-                <h2>Sobre Mim </h2>
-
-                <p>
-                    Me chamo Alice, tenho 29 anos e sou de São Paulo/SP.
-                </p>
-                <p>
-                    Possuo experiência no desenvolvimento de APIs REST, implementação de CRUDs completos, autenticação com JWT, modelagem de banco de dados e criação de interfaces modernas e responsivas. Também atuo com testes automatizados, documentação de APIs e deploy de aplicações.
-                </p>
-                <p>
-                    Tenho perfil analítico, e esse é o meu ponto forte. Quando encontro um bug, me sinto desafiada e gosto de compreender o problema para encontrar possíveis soluções.
-                </p>
-                
-
-                <div class="about-buttons-data">
-                    <div class="buttons-container">
-                        <a href="#" target="_blank" class="botao">Github</a>
-                        <a href="#" target="_blank" class="botao-outline">Currículo</a>
-                    </div>
-
-                    <div class="data-container">
-                        <div class="data-item">
-                            <span class="data-number">100</span>
-                            <span class="data-label">Seguidores</span>
-                        </div>
-
-                        <div class="data-item">
-                            <span class="data-number">10</span>
-                            <span class="data-label">Repositórios</span>
-                        </div>
-                    </div>
-                </div>
-            </article>
+      <!--Sobre o autor/ excluida / js-->
+        <section id="about" class="section-container about-container">
+        
         </section>
 
         <!-- Seção Projetos-->
@@ -143,34 +108,7 @@
             <!--Swiper Container -->
             <div class="swiper projects-swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <article class="project-card">
-                            <figure class="project-image">
-                                <img src="./assets/icons/languages/github.svg"
-                                alt="Ícone Github">
-                            </figure>
-
-                            <div class="project-content">
-                                <h3>Projeto Github</h3>
-                                <p>Projeto Desenvolvido no Github</p>
-
-                                <div class="project-tags">
-                                    <span class="tag">Github</span>
-                                </div>
-
-                                <div class="project-buttons">
-                                    <a href="#" target="_blank" class="botao botao-sm">
-                                        Github
-                                    </a>
-
-                                    <a href="#" target="_blank" class="botao-outline botao-sm">
-                                        Deploy
-                                    </a>
-                                </div>
-                            </div>
-
-                        </article>
-                    </div>
+                    
                 </div>
 
                 <!--Botões de navegação-->
@@ -206,7 +144,10 @@
             </article>
 
             <!--Formulário-->
-            <form id="formulario">
+            <form id="formulario" action="https://formsubmit.co/211670049f2140ec02779fb4b55691a2" method="POST">
+
+                <input type="hidden" name="_next" value="http://localhost:5501/success.html">
+                <input type="hidden" name="_captcha" value="false">
 
                 <label for="nome">Nome</label>
                 <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
@@ -235,6 +176,12 @@
     <footer>
         Desenvolvido por Alice Tolosa - 2026
     </footer>
-    
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
+    <!-- Script JavaScript-->
+    <script src="assets/js/script.js"></script>
+
 </body>
 </html>
